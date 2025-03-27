@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="shortcut icon" href="assets/img/fav_trans.png" type="image/png">
+
+        <!--=============== REMIXICONS ===============-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+        
+        <!--=============== SWIPER CSS ===============-->
+        <link rel="stylesheet" href="assets/main/css/truot.css">
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="assets/main/css/web.css">
+
+        <!--=============== FEEDBACK ===============-->
+        <link rel="stylesheet" href="assets/main/css/feedback.css">
+
+        <title>FEEDBACK</title>
+    </head>
+    <body>
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="HOME.html" class="nav__logo">XEM ĐI CHỜ CHI</a>
+
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-function-line"></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="main">
+            <!--==================== HOME ====================-->
+            <section class="home" id="home">
+                <img src="assets/img/home_banner.png" alt="" class="home__img">
+
+                <div class="home__container container grid">
+                    <div class="home__data">
+                        <span class="home__data-subtitle"></span>
+                        <h1 class="home__data-title"><b>FEEDBACK</b> <br><br></h1>
+
+                    </div>
+
+                    <div class="home__social">
+                        <a href="https://www.facebook.com/people/12Tin1-Nh%C3%B3m-4/61567551915264/" target="_blank" class="home__social-link">
+                            <i class="ri-facebook-box-fill"></i>
+                        </a>
+                        
+                    </div>
+                </div>
+            </section>
+            <br><br><br><br>
+
+            <!--==================== FEEDBACK ====================-->
+            <section id="feedback-section">
+                <div class="container" id="form-container">
+
+                    <form id="feedback-form">
+                        <label for="name">Tên:</label>
+                        <input type="text" id="name" required>
+            
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" required>
+            
+                        <label for="rating">Đánh giá của bạn:</label>
+                        <select id="rating" required>
+                            <option value="">Lựa chọn</option>
+                            <option value="5">Xuất sắc</option>
+                            <option value="4">Rất tốt</option>
+                            <option value="3">Tốt</option>
+                            <option value="2">Ổn</option>
+                            <option value="1">Chưa tốt</option>
+                        </select>
+            
+                        <label for="comments">Lời góp ý thêm:</label>
+                        <textarea id="comments" rows="4"></textarea>
+            
+                        <button type="submit">Gửi</button>
+                    </form>
+                </div>
+            
+                <div class="thank-you hidden" id="thank-you">
+                    <h2 style="text-align:center">Cảm ơn bạn đã dành thời gian để góp ý!</h2>
+                    <p style="text-align:center">Góp ý của bạn đã được ghi nhận</p>
+                    <button onclick="restartForm()">Gửi thêm một bản góp ý</button>
+                </div>
+            </section>
+            
+
+        </main>    
+        <!--==================== FOOTER ====================-->
+        <footer class="footer section">
+            <div class="footer__container container grid">
+                <div class="footer__content grid">
+                    <div class="footer__data">
+                        <h3 class="footer__title">XEMDICHOCHI</h3>
+                        <p class="footer__description">Tổng hợp các <br> gameshow nổi nhất <br> năm 2024
+                        </p>
+                        <div>
+                            <a href="https://www.facebook.com/people/12Tin1-Nh%C3%B3m-4/61567551915264/" target="_blank" class="footer__social">
+                                <i class="ri-facebook-box-fill"></i>
+                            </a>
+                            
+                        </div>
+                    </div>
+    
+                    <div class="footer__data">
+                        <h3 class="footer__subtitle">Chương trình</h3>
+                        <ul>
+                            <li class="footer__item">
+                                <a href="ATSH.html" class="footer__link">Anh Trai Say Hi</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="ATVNCG.html" class="footer__link">Anh Trai Vượt Ngàn Chông Gai</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="CDDGRS.html" class="footer__link">Chị Đẹp Đạp Gió Rẽ Sóng</a>
+                            </li>
+                        </ul>
+                    </div>
+    
+                    <div class="footer__data">
+                        <h3 class="footer__subtitle">Địa chỉ</h3>
+                        <ul>
+                            <li class="footer__item">
+                                <p class="footer__description">235 Nguyễn Văn Cừ, Phường 4, Quận 5, TP.HCM, Việt Nam.</p>
+                            </li>
+                        </ul>
+                    </div> 
+                    
+                    <div class="footer__data">
+                        <h3 class="footer__subtitle">Góp ý</h3>
+                        <ul>
+                            <li class="footer__item">
+                                <a href="FEEDBACKFORM.html" class="footer__link">Gửi góp ý</a>
+                            </li>
+                        </ul>
+                    </div> 
+                </div>
+
+                <div class="footer__rights">
+                    <p class="footer__copy">&#169; 2025 Nhom4.</p>
+                </div>
+            </div>
+        </footer>
+
+        <!--=============== FEEDBACK ===============-->
+        <script src="/assets/main/js/feedback.js"></script>
+        <!--=============== SWIPER JS ===============-->
+        <script src="assets/main/js/truot.js"></script>        
+        <!--=============== MAIN JS ===============-->
+        <script src="assets/main/js/chinh.js"></script>
+    </body>
+</html>
